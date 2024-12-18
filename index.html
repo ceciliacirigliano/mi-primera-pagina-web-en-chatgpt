@@ -1,0 +1,205 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Sostenible</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #3E8E41;
+            --light-color: #f4f4f4;
+            --dark-color: #333;
+            --accent-color: #45a049;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            padding: 0.75rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 60vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0.5rem 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent-color);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: var(--light-color);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+
+        .feature img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        #como-funciona, #testimonios {
+            padding: 2rem;
+            text-align: center;
+            background-color: var(--light-color);
+        }
+
+        #como-funciona h2, #testimonios h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marketplace Sostenible</h1>
+        <p>Conecta con un futuro más verde</p>
+    </header>
+
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#como-funciona">¿Cómo funciona?</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Compra con Prop&oacute;sito</h1>
+        <p>Explora productos ecol&oacute;gicos de peque&ntilde;os productores comprometidos con la sostenibilidad.</p>
+        <button class="cta-button">Explorar Productos</button>
+    </section>
+
+    <section id="productos" class="features">
+        <div class="feature">
+            <img src="C:\Users\Sergio\OneDrive\Escritorio\PWDC\Mi primera web con ChatGPT\img\blog-01feb--1-.png" alt="Productos ecol&oacute;gicos">
+            <h2>Productos Eco</h2>
+            <p>Descubre productos que respetan el medio ambiente.</p>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\Sergio\OneDrive\Escritorio\PWDC\Mi primera web con ChatGPT\img\sostenibilidad-ecologica.jpg" alt="Ropa sostenible">
+            <h2>Ropa Sostenible</h2>
+            <p>V&iacute;stete con conciencia y estilo.</p>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\Sergio\OneDrive\Escritorio\PWDC\Mi primera web con ChatGPT\img\que-es-la-sostenibilidad-ambiental.jpg" alt="Alimentos org&aacute;nicos">
+            <h2>Alimentos Org&aacute;nicos</h2>
+            <p>Alimenta tu cuerpo de forma natural.</p>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\Sergio\OneDrive\Escritorio\PWDC\Mi primera web con ChatGPT\img\sostenibilidad-empresarial.jpg" alt="Negocios sostenibles">
+            <h2>Negocios Sostenibles</h2>
+            <p>Apoya a empresas comprometidas con el futuro.</p>
+        </div>
+    </section>
+
+    <section id="como-funciona">
+        <h2>&iquest;C&oacute;mo funciona?</h2>
+        <p>1. Explora una amplia variedad de productos.</p>
+        <p>2. Apoya a peque&ntilde;os productores locales.</p>
+        <p>3. Recibe tus productos en casa y ayuda al planeta.</p>
+    </section>
+
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <p><em>&quot;El Marketplace Sostenible me ha permitido encontrar productos incre&iacute;bles mientras cuido el planeta.&quot;</em> - Ana L&oacute;pez</p>
+        <p><em>&quot;Me encanta apoyar a peque&ntilde;os emprendedores que comparten mis valores.&quot;</em> - Carlos Ram&iacute;rez</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Marketplace Sostenible. Todos los derechos reservados.</p>
+        <p><a href="#">Pol&iacute;tica de privacidad</a> | <a href="#">T&eacute;rminos de uso</a></p>
+    </footer>
+</body>
+</html>
